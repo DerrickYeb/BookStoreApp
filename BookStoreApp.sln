@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStoreApp", "BookStoreApp\BookStoreApp.csproj", "{B5A2CEE2-BCFF-40C7-BFEE-F0FA6A5DA9E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStoreApp.DAL", "BookStoreApp.DAL\BookStoreApp.DAL.csproj", "{599D8E81-1E2F-40AB-9EAB-59C735503A75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStoreApi", "BookStoreApi\BookStoreApi.csproj", "{21284E98-5A8E-4335-8958-28FBED6D9421}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStoreAppTest", "BookStoreAppTest\BookStoreAppTest.csproj", "{DAE7BC56-BC8A-4836-945B-1250ABD109A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5A2CEE2-BCFF-40C7-BFEE-F0FA6A5DA9E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5A2CEE2-BCFF-40C7-BFEE-F0FA6A5DA9E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5A2CEE2-BCFF-40C7-BFEE-F0FA6A5DA9E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5A2CEE2-BCFF-40C7-BFEE-F0FA6A5DA9E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{599D8E81-1E2F-40AB-9EAB-59C735503A75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{599D8E81-1E2F-40AB-9EAB-59C735503A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{599D8E81-1E2F-40AB-9EAB-59C735503A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{599D8E81-1E2F-40AB-9EAB-59C735503A75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21284E98-5A8E-4335-8958-28FBED6D9421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21284E98-5A8E-4335-8958-28FBED6D9421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21284E98-5A8E-4335-8958-28FBED6D9421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21284E98-5A8E-4335-8958-28FBED6D9421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAE7BC56-BC8A-4836-945B-1250ABD109A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAE7BC56-BC8A-4836-945B-1250ABD109A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAE7BC56-BC8A-4836-945B-1250ABD109A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAE7BC56-BC8A-4836-945B-1250ABD109A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

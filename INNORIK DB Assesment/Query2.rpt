@@ -1,0 +1,9 @@
+﻿PRODUCT_NAME CATEGORY   DATE_ADDED              total_running_product_types
+------------ ---------- ----------------------- ---------------------------
+LG TV        TV-SETS    2022-04-03 00:00:00.000 1
+SAMSUNG TV   TV-SETS    2022-04-03 00:00:00.000 1
+
+(2 rows affected)
+
+
+Completion time: 2022-04-03T14:57:53.9040681+00:00
