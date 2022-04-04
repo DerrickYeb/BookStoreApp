@@ -18,8 +18,9 @@ const URL = "https://jsonplaceholder.typicode.com/users"
 
 function Dashboard() {
     const initialState = [
-        {id: 1, name: "maria", lastname: "Falcon", email: "a@gmail.com", admin: true, language: "ES"},
-        {id: 2, name: "Yoel", lastname: "Herrera", email: "b@gmail.com", admin: false, language: "EN"}
+        {id: 1, bookName: "derrick", price: 200, category: "romance", description: "books"},
+        {id: 2, bookName: "derricks", price: 200, category: "romance", description: "books"},
+        {id: 3, bookName: "derricky", price: 200, category: "romance", description: "books"},
     ]
 const addToast = useToasts()
     const getAllBooks = (bookId) => {
@@ -47,7 +48,7 @@ const addToast = useToasts()
     
     //Search State
     const [search,setSearch] = useState('');
-    
+    const [loading, setLoading] = useState(false);
     const handleSearch = (e) =>{
         setSearch(e.target.value)
     }
@@ -57,6 +58,7 @@ const addToast = useToasts()
     const [showEditModal, setShowEditModal] = useState(false);
 
     useEffect(() => {
+        setLoading(true);
             return axios.get("https://localhost:7284/api/book", {header: {"Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImRlcnJ5IiwibmJmIjoxNjQ4OTIyOTY5LCJleHAiOjE2NDkwMDkzNjksImlhdCI6MTY0ODkyMjk2OX0.yLwnIeSooZk-qxP9VsH77sds80o_d43qi4MCS_CE58M"},}).then(resp => {
                 const nuewData = []
                 const dataAxios = resp.data
@@ -75,8 +77,9 @@ const addToast = useToasts()
                     ite.name.toLowerCase().includes(search.toLowerCase())
                 }))
                 setData(nuewData)
+                setLoading(false)
             });
-        }
+        },[]
     )
     
     
@@ -147,9 +150,10 @@ const addToast = useToasts()
             <Container>
                 <br/>
                 <Button color="success" onClick={() => insertFn()} className='m-2'>Insert New Book</Button>
-                <input id="search" onChange={handleSearch} type="text" className="form-control"/>
-                <Button onClick={() => loadAxios()} className='m-2'>Search</Button>
-                <Button onClick={() => searchBookById()} className='m-2'>Search By</Button>
+                {/*<input id="search" onChange={handleSearch} type="text" className="form-control"/>*/}
+                {/*<Button onClick={() => loadAxios()} className='m-2'>Search</Button>*/}
+                {/*<Button onClick={() => searchBookById()} className='m-2'>Search By</Button>*/}
+                {loading ? "loading":""}
                 <br/>
                 <Table responsive>
                     <thead>

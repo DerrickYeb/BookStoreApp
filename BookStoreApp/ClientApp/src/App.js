@@ -38,16 +38,17 @@ export default class App extends Component {
                     {currentUser &&
                         <nav className="navbar navbar-expand navbar-dark bg-dark">
                             <div className="navbar-nav">
-                                <Link to="/" className="nav-item nav-link">Home</Link>
+                                {/*<Link to="/" className="nav-item nav-link">Home</Link>*/}
                                 <a onClick={this.logout} className="nav-item nav-link">Logout</a>
+                                <label>{currentUser.username}</label>
                             </div>
                         </nav>
                     }
 
                     <div className="">
                         <ToastProvider>
-                        {/*<PrivateRoute exact path="/" component={Dashboard}/>*/}
-                        <Route path="/" component={Dashboard}/>
+                        <PrivateRoute exact path="/" component={Dashboard}/>
+                        <Route path="/login" component={LoginPage}/>
                         </ToastProvider>
                     </div>
                   
